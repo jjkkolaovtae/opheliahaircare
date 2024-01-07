@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+	<div class="banner">
+		<div class="navbar">
+			<h1><a href="index.html">OPHELIA</a></h1>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#">Hair</a></li>
+				<!-- <li><a href="#">Products</a></li> -->
+				<li><a href="about_us.html">About Us</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="content">
+		<h1>Glamorous</h1>
+		<p>Say hello to good hair days as soon as<br> you open this website! If you are interested, <br>
+		Sign in! (or Login!)</p>
+		<div class="buttons">
+		<form action="hair.form.html" method="get">
+				<button type="submit"><span></span>SIGN UP!</button>
+		</form>
+
+		<form action="hair.form2.html" method="get">
+				<button type="submit"><span></span>SIGN IN!</button>
+		</form>
+		</div>
+	</div>
+
+	<section class="startup">
+		<h1>Why Choose Us?</h1>
+		<p>Let's begin the journey with us</p>
+	</section>
+
+	<div class="row1">
+		<div class="childa">
+			<i class="fa-solid fa-heart" id="emo"></i>
+			<h3>Say NO to bad <br>hair days with US</h3>
+			<p>Discover the art of <br>transformative hair styling on our platform.<br> From trendy cuts to timeless classics. <br>A lot of hairstyles that suit every personalities!</p>
+		</div>
+		<div class="childb">
+			<i class="fa-solid fa-gift" id="emo"></i>
+			<h3>Many events and discounts <br>are coming for you too</h3>
+			<p>Style and nourish your looks<br> without breaking the bank! <br>Explore our hair haven <br>where discounts and events abound.</p>
+		</div>
+		<div class="childc">
+			<i class="fa-solid fa-cart-shopping" id="emo"></i>
+			<h3>So many choices<br>for hair products</h3>
+			<p>Unlock the secret to luxury<br> looks with our selection of <br>premium hair products. Dive into a world <br>of transformative shampoos , conditioners</p>
+		</div>
+		<div class="childd">
+			<i class="fa-solid fa-comment" id="emo"></i>
+			<h3>Provide tips and routines <br>about hair care</h3>
+			<p>Explore expert-guided routines<br> designed to cater to every hair type, <br>offering a step-by-step approach <br>to achieve your desired results.</p>
+		</div>
+	</div>
+
+	<div class="row2">
+		<div class="child1">
+
+			<h2>What We Do & Offer</h2>
+			<p>Welcome to our best destination for all things hair where beauty knows no boundaries. Explore the latest trends in hairstyles, discover the best hair treatments , and find a selection of high-quality hair products suitable for all genders on their hair journey for every hair type, texture, and identity. Unleash your unique style and nourish your locks with expert advice and high-quality products. Whether you seek hydration, repair, or rejuvenation, our carefully selected treatments offer a personalized approach to elevate your hair care routine! Because your hair deserves nothing but THE BEST!! Join us at Ophelia, where every hair strand tells a story and your journey to gorgeous, healthy hair begins!</p>
+		</div>
+	</div>
+	</div>
+
+	<!-- <div class="row3">
+		<div class="child2">
+			
+		</div>
+	</div>
+ -->
+
+	<div class="slideshow-container">
+
+<div class="mySlides">
+	<div class="text">“Anyone can be confident with a full head of hair. But a confident bald man – there’s your diamond in the rough.”<br> – Larry David</div>
+  <img src="img/hair13.jpg" style="width:100%">
+  <!-- <div class="text">Caption Text</div> -->
+</div>
+
+<div class="mySlides">
+	<div class="text">“For me, the working of hair is architecture with a human element.” <br>― Vidal Sassoon</div>
+  <img src="img/hair2.jpg" style="width:100%">
+  <!-- <div class="text">Caption Two</div> -->
+</div>
+
+<div class="mySlides">
+  <div class="text">“It doesn’t matter if your life is perfect as long as your hair color is.”<br>- Stacy Snapp Killian</div>
+  <img src="img/hair14.jpg" style="width:100%">
+  <!-- <div class="text">Caption Three</div> -->
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align: center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+ <div class="feedback">
+ 	<div class="child4">
+ 		<div class="review">
+
+ 			<i class="fa-solid fa-user" id="icon"></i>
+
+ 			<p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></p>
+ 			<h4>This website is really good for teens <br>that are looking for hairstyles that will suit them <br>but it will be better if there are more styles to choose and <br>it really herped me so overall I will give a 4.5/5.</h4>
+ 			<p>sarah_mililo4</p>
+
+ 			<form action="form.html" method="get" class="btn">
+				<h1><button type="submit"><span id="id"></span>SEND A REVIEW!</button></h1>
+		</form>
+ 		</div>
+ 		<div class="review">
+
+ 			<i class="fa-solid fa-user" id="icon"></i>
+
+ 			<p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+ 			<h4>This website really helped me a lot because <br>it has a lot of hairstyles, hair products and <br>hair accessories to offer every gender but<br> I think you should add more hairstyles to choose from.</h4>
+ 			<p>Anonymous</p>
+
+ 			<form action="form.html" method="get" class="btn">
+				<h1><button type="submit"><span id="id"></span>SEND A REVIEW!</button></h1>
+		</form>
+ 		</div>
+ 	</div>
+ </div>
+
+<!-- <h1>Our Team</h1>
+
+<div class="row">
+  <div class="column">
+    <img src="img/mayphu.png"  style="width:20%">
+  </div>
+  <div class="column">
+    <img src="img/may.webp"  style="width:20%">
+  </div>
+  <div class="column">
+    <img src="img/mtt.png"  style="width:20%">
+  </div>
+</div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="footer">
+		<div class="child3">
+			<a href=""><i class="fa-brands fa-facebook"></i></a>
+			<a href=""><i class="fa-brands fa-twitter"></i></a>
+			<a href=""><i class="fa-brands fa-linkedin"></i></a>
+			<a href=""><i class="fa-brands fa-instagram"></i></a>
+		</div>
+	</div>
+
+	<div class="footer2">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="#">Hair</a></li>
+			<!-- <li><a href="#">Products</a></li> -->
+			<li><a href="#">About Us</a></li>
+		</ul>
+	</div>
+
+	<div class="footer3">
+		<p>Copyright &copy;2023; Designed by Room 4 (May, May Phu, Min Thu Tah)<span class="designers"></span></p>
+	</div>
+</body>
+</html>

@@ -1,0 +1,135 @@
+body{
+	background-color: #eadece;
+}
+*{box-sizing: border-box;
+	margin: 7px;
+	padding: 10px;
+}
+
+@media all and (max-width:992px){
+	*{box-sizing: border-box;
+	margin: 7px;
+	padding: 10px;
+}
+
+
+
+@media all and (max-width:1384px){
+    input[type='submit']{
+	width: 15vw;
+	height:6vh ;
+	background-color: #E9DCBE;
+	display: inline-block;
+	text-align: center;
+
+}
+}
+
+input[type='submit']{
+	width: 15vw;
+	height:6vh ;
+	background-color: #E9DCBE;
+	display: inline-block;
+	text-align: center;
+
+}
+@media all and (max-width:1384px){
+	button[type='reset']{
+	width: 15vw;
+	height:6vh ;
+	background-color: #E9DCBE;
+	
+}
+}
+button[type='reset']{
+	width: 15vw;
+	height:6vh ;
+	background-color: #E9DCBE;
+	
+}
+@media all and (max-width:1384px){
+input[type=text]
+{
+	width: 100vw;
+	padding: 20px;
+	border: 1px solid black;
+	border-radius: 4px;
+}
+}
+input[type=text]
+{
+	width: 100vw;
+	padding: 20px;
+	border: 1px solid black;
+	border-radius: 4px;
+}
+@media all and (max-width:1400px){
+	label{
+	padding: 10px 10px 10px 0;
+	display: inline-block;
+}
+}
+label{
+	padding: 10px 10px 10px 0;
+	display: inline-block;
+}
+@media all and (max-width:1400px){
+	.formcontainer{
+	border-radius: 3%;
+	padding: 20px;
+	background: transparent;
+	border: 1px 100vh 50vw solid black;
+	border-style: groove;
+	display: flex;
+	justify-content: center;
+	width: 50vw;
+	align-content: center;
+	
+}
+}
+.formcontainer{
+	border-radius: 3%;
+	padding: 20px;
+	background: transparent;
+	border: 1px 100vh 50vw solid black;
+	border-style: groove;
+	display: flex;
+	justify-content: center;
+	width: 50vw;
+	align-content: center;
+	
+}
+@media all and (max-width:1400px){
+	#image{
+	width: 100%;
+	height: 100vh;
+	background-image: url('img/haircare.jpg');
+	background-size: cover;
+	background-position: center;
+	overflow: hidden;
+}
+}
+#image{
+	width: 100%;
+	height: 100vh;
+	background-image: url('img/haircare.jpg');
+	background-size: cover;
+	background-position: center;
+	overflow: hidden;
+}
+@media all and (max-width:1400px){
+	#text{
+	align-content: center;
+	font-size: 60px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #BFA100;
+
+}
+}
+#text{
+	align-content: center;
+	font-size: 60px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #BFA100;
+
+}
